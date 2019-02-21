@@ -20,10 +20,10 @@ class UserCollection extends Array {
 ```js
 const serializer = new Serializer([UserCollection, User])
 
-const users = new UserCollection([
+const users = new UserCollection(
     new User(1, 'active'),
     new User(2, 'inactive'),
-])
+)
 
 const serialized = serializer.stringify(users)
 
